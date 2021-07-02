@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MeineFireBaseSQLLite</string>
+    <string name="username">USERNAME</string>
+    <string name="edit_username_hint">Input your username</string>
+    <string name="password">PASSWORD</string>
+    <string name="edit_password_hint">Input your password</string>
+    <string name="dash_details">CREDENTIAL DETAILS</string>
+    <string name="button_registration">REGISTER</string>
+</resources>

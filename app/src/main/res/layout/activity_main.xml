@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:id="@+id/main_container"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/text_username"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_username_hint"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/text_password"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/edit_password_hint" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_details"
+        android:text="@string/dash_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_add"
+        android:text="@string/button_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
