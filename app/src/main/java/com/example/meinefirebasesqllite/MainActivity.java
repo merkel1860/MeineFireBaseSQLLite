@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-temporaryPassword = s.toString();
+                temporaryPassword = s.toString();
             }
 
             @Override
@@ -78,8 +78,8 @@ temporaryPassword = s.toString();
     }
 
     private void movingToDash(User user) {
-        Intent intent = new Intent(getApplicationContext(),DashActivity.class);
-        intent.putExtra("userdetails",user);
+        Intent intent = new Intent(getApplicationContext(), DashActivity.class);
+        intent.putExtra("userdetails", user);
         startActivity(intent);
     }
 
@@ -87,7 +87,8 @@ temporaryPassword = s.toString();
         User user = new User();
         user.getLogin().setUsername(temporaryUsername);
         user.getLogin().setPassword(temporaryPassword);
-
+       /* System.out.println("Username :" + temporaryUsername);
+        System.out.println("Password :" + temporaryPassword);*/
         return user;
     }
 
@@ -96,5 +97,6 @@ temporaryPassword = s.toString();
         userName = findViewById(R.id.edit_username);
         userPass = findViewById(R.id.edit_pass);
         temporaryPassword = "";
+        temporaryUsername = "";
     }
 }

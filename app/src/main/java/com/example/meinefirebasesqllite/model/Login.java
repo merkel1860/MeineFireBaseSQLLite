@@ -1,10 +1,11 @@
 package com.example.meinefirebasesqllite.model;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class Login {
+public class Login implements Serializable {
     private String username;
     private String password;
 

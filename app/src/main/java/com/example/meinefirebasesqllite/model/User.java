@@ -1,8 +1,9 @@
 package com.example.meinefirebasesqllite.model;
 
-import android.location.Address;
+import com.example.meinefirebasesqllite.model.Address;
 
 import java.io.Serializable;
+import java.util.Locale;
 
 public class User implements Serializable {
     private String fname;
@@ -12,6 +13,10 @@ public class User implements Serializable {
     private Login login;
 
     public User() {
+        login = new Login();
+        myAddress = new Address();
+        fname = "";
+        laname = "";
     }
 
     public User(String username, String pass) {
